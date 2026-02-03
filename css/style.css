@@ -144,3 +144,27 @@ body {
   line-height: 1.6;
   max-width: 900px;
 }
+
+button {
+  background-color: #000; /* Nero come il tuo header */
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 50px; /* Arrotondato */
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+button:active {
+  transform: translateY(0);
+}
