@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 600" preserveAspectRatio="none">
+  <path
+    d="
+      M0,0
+      H1440
+      V350
+      C1200,300 950,520 720,520
+      C420,520 300,260 0,220
+      Z
+    "
+    fill="#808080"
+  />
+</svg>
