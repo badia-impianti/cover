@@ -365,3 +365,23 @@ button:hover {
 button:active {
   transform: translateY(0);
 }
+
+.footer-logo{
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin: -40px auto 0;   /* 👈 alza il logo */
+}
+
+.footer-bottom-left{
+  width: 33.333%;   /* stessa larghezza colonna */
+  margin-top: 25px;
+}
+
+@media (max-width: 768px){
+  .footer-bottom-left{
+    width: 100%;
+    text-align: center;
+  }
+}
