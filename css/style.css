@@ -97,20 +97,12 @@ p {
   border-radius: 4px;
 }
 
-.certificazioni img {
-  border-radius: 4px;
-}
-
-/* CERTIFICAZIONI */
-.certificazioni img {
-  max-width: 260px;
+/* CERTIFICAZIONI – layout riga */
+.certificato-img{
+  max-height: 260px;
   width: 100%;
-  height: auto;
-}
-
-.certificazioni img {
-  display: block;
-  margin: 0 auto 20px;
+  object-fit: contain;
+  border-radius: 4px;
 }
 
 .homepage-intro {
