@@ -500,3 +500,26 @@ button:active {
   }
 
 }
+
+/* ===== HOME HERO MOBILE: togli vuoto sopra ===== */
+@media (max-width: 768px){
+
+  .hero{
+    min-height: auto !important;     /* elimina 100vh */
+    padding-top: 90px !important;    /* spazio dalla navbar */
+    padding-bottom: 24px !important; /* compatto sotto */
+  }
+
+  .logo{
+    margin-top: 0 !important;
+  }
+
+  .tagline{
+    margin-top: 12px !important;
+  }
+
+  /* Spazio tra tagline e intro */
+  .homepage-block{
+    margin-top: 26px !important;
+  }
+}
