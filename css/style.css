@@ -386,9 +386,9 @@ button:active {
   }
 
   /* HERO */
-  .hero{
-    min-height: auto;      /* evita buchi enormi */
-    padding: 90px 0 40px;  /* spazio sopra/sotto */
+   .hero{
+    min-height: auto;
+    padding: 80px 0 20px; /* ↓ meno spazio sotto */
   }
 
   .logo{
@@ -400,16 +400,14 @@ button:active {
   .tagline{
     font-size: 1.05rem;
     line-height: 1.25;
-    margin: 14px auto 0;
-    max-width: 92%;
+    margin: 10px auto 0;  /* ↓ avvicina al logo */
   }
 
   /* Intro home (testo lungo) */
-  .homepage-intro{
+    .homepage-intro{
+    margin-top: 10px;     /* ↓ avvicina alla tagline */
     font-size: 1.15rem;
     line-height: 1.45;
-    max-width: 100%;
-    font-weight: 400; /* meno grassetto */
   }
 
   /* Sottotitoli pagine */
