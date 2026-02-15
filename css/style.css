@@ -373,153 +373,47 @@ button:active {
   margin-top: 10px;
 }
 
-/* ===== MOBILE FIXES ===== */
+/* =========================
+   HOME (MOBILE) - SPACING
+   ========================= */
 @media (max-width: 768px){
 
-  body{
-    padding-top: 64px; /* navbar fixed-top */
+  /* evita “buchi” eccessivi e spazio sopra al logo */
+  .hero{
+    min-height: auto !important;
+    padding: 70px 0 18px !important;  /* ↓ riduce spazio sopra */
   }
 
-  .container{
-    padding-left: 18px;
-    padding-right: 18px;
-  }
-
-  /* HERO */
-   .hero{
-    min-height: auto;
-    padding: 80px 0 20px; /* ↓ meno spazio sotto */
-  }
-
+  /* logo */
   .logo{
     width: 240px;
     max-width: 85%;
-    margin: 0 auto;
+    margin: 0 auto !important;
+    display: block;
   }
 
+  /* tagline: più vicina al logo */
   .tagline{
     font-size: 1.05rem;
     line-height: 1.25;
-    margin: 20px auto 0;  /* ↓ avvicina al logo */
+    margin: 12px auto 0 !important;
+    max-width: 92%;
   }
 
+  /* blocco intro: più stacco rispetto alla tagline */
   .homepage-intro{
     font-family: 'Inter', Arial, sans-serif;
     font-weight: 400;
-    font-size: 1.15rem;
-    margin-top: 35px;
+    font-size: 1.12rem;
     line-height: 1.5;
+    margin: 22px auto 0 !important;  /* ← questo è lo stacco reale */
+    max-width: 92%;
   }
 
-  /* Sottotitoli pagine */
-  .subtitle{
-    font-size: 1rem;
-    margin: 0 auto 40px;
-    padding: 0 6px;
-  }
-
-  /* Testi lunghi */
-  .text-content{
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 768px){
-
-  .site-header .navbar-nav{
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
-  .site-header .nav-link{
-    padding: 12px 0;     /* area clic più grande */
-  }
-}
-
-@media (max-width: 768px){
-
-  .site-footer{
-    text-align: left;
-  }
-
-  .site-footer .col-md-4{
-    margin-bottom: 22px;
-  }
-
-  .footer-logo{
-    margin: 0 auto 10px; /* niente margin negativo su mobile */
-    max-width: 180px;
-  }
-
-  .footer-copy{
-    text-align: center;  /* più pulito su mobile */
-  }
-}
-
-@media (max-width: 768px){
-
-  .certificato-img{
-    max-height: 160px;   /* più piccolo su mobile */
-  }
-
-  .certificazioni h4{
-    margin-top: 10px;
-  }
-
-  .certificazioni p,
-  .certificazioni li{
-    font-size: 0.95rem;
-    line-height: 1.5;
-  }
-}
-
-@media (max-width: 768px){
-
-  .referente-card{
-    max-width: 100%;
-    padding-top: 22px;
-  }
-
-  .referente-card p{
-    font-size: 0.98rem;
-  }
-}
-
-/* SPAZIO INTRO HOMEPAGE */
-.homepage-block{
-  margin-top: 25px;
-  margin-bottom: 40px;
-}
-
-/* MOBILE */
-@media (max-width: 768px){
-
+  /* IMPORTANTISSIMO:
+     se il container ha ancora mb-5, lo annulliamo solo su mobile */
   .homepage-block{
-    margin-top: 30px;   /* ↑ spazio dalla tagline */
-    margin-bottom: 30px;
-  }
-
-}
-
-/* ===== HOME HERO MOBILE: togli vuoto sopra ===== */
-@media (max-width: 768px){
-
-  .hero{
-    min-height: auto !important;     /* elimina 100vh */
-    padding-top: 90px !important;    /* spazio dalla navbar */
-    padding-bottom: 24px !important; /* compatto sotto */
-  }
-
-  .logo{
     margin-top: 0 !important;
-  }
-
-  .tagline{
-    margin-top: 12px !important;
-  }
-
-  /* Spazio tra tagline e intro */
-  .homepage-block{
-    margin-top: 26px !important;
+    margin-bottom: 50px !important;
   }
 }
