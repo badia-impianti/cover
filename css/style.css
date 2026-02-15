@@ -453,3 +453,19 @@ button:active {
 .custom-toggler.active .toggler-line:nth-child(3){
   transform: rotate(-45deg) translate(6px, -6px);
 }
+
+/* PAGINA RADICI */
+.radici-dedica{
+  border-top: 1px solid #ddd;
+  padding-top: 30px;
+  margin-top: 50px;
+}
+
+@media (max-width: 768px){
+
+  .radici-dedica{
+    margin-top: 40px;
+    padding-top: 25px;
+  }
+
+}
