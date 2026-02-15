@@ -120,12 +120,13 @@ p {
   font-size: 0.95rem;
 }
 
-.homepage-intro {
+.homepage-intro{
+  font-family: 'Lora', serif;  /* 👈 nuovo font */
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: 400;
   max-width: 900px;
   margin: 0 auto;
-  line-height: 1.4;
+  line-height: 1.45;
 }
 
 .reveal {
@@ -208,7 +209,9 @@ body {
 
 /* HERO */
 .hero {
-  min-height: 100vh;
+  min-height: 80vh; /* oppure 50vh */
+  display: flex;
+  align-items: center;
 }
 
 
@@ -222,7 +225,7 @@ body {
 .tagline {
   font-size: 1.4rem;
   max-width: 720px;
-  margin: 10px auto 0;
+  margin: 15px auto 0;
 }
 
 /* Responsive fine-tuning */
@@ -271,7 +274,7 @@ body {
 
 .homepage-intro {
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: 400;
   max-width: 900px;
   margin: 0 auto;
   line-height: 1.4;
@@ -368,4 +371,117 @@ button:active {
   font-size: 0.8rem;
   color: #666;
   margin-top: 10px;
+}
+
+/* ===== MOBILE FIXES ===== */
+@media (max-width: 768px){
+
+  body{
+    padding-top: 64px; /* navbar fixed-top */
+  }
+
+  .container{
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  /* HERO */
+  .hero{
+    min-height: auto;      /* evita buchi enormi */
+    padding: 90px 0 40px;  /* spazio sopra/sotto */
+  }
+
+  .logo{
+    width: 240px;
+    max-width: 85%;
+    margin: 0 auto;
+  }
+
+  .tagline{
+    font-size: 1.05rem;
+    line-height: 1.25;
+    margin: 14px auto 0;
+    max-width: 92%;
+  }
+
+  /* Intro home (testo lungo) */
+  .homepage-intro{
+    font-size: 1.15rem;
+    line-height: 1.45;
+    max-width: 100%;
+    font-weight: 400; /* meno grassetto */
+  }
+
+  /* Sottotitoli pagine */
+  .subtitle{
+    font-size: 1rem;
+    margin: 0 auto 40px;
+    padding: 0 6px;
+  }
+
+  /* Testi lunghi */
+  .text-content{
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px){
+
+  .site-header .navbar-nav{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .site-header .nav-link{
+    padding: 12px 0;     /* area clic più grande */
+  }
+}
+
+@media (max-width: 768px){
+
+  .site-footer{
+    text-align: left;
+  }
+
+  .site-footer .col-md-4{
+    margin-bottom: 22px;
+  }
+
+  .footer-logo{
+    margin: 0 auto 10px; /* niente margin negativo su mobile */
+    max-width: 180px;
+  }
+
+  .footer-copy{
+    text-align: center;  /* più pulito su mobile */
+  }
+}
+
+@media (max-width: 768px){
+
+  .certificato-img{
+    max-height: 160px;   /* più piccolo su mobile */
+  }
+
+  .certificazioni h4{
+    margin-top: 10px;
+  }
+
+  .certificazioni p,
+  .certificazioni li{
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 768px){
+
+  .referente-card{
+    max-width: 100%;
+    padding-top: 22px;
+  }
+
+  .referente-card p{
+    font-size: 0.98rem;
+  }
 }
