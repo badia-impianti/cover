@@ -414,6 +414,6 @@ button:active {
      se il container ha ancora mb-5, lo annulliamo solo su mobile */
   .homepage-block{
     margin-top: 0 !important;
-    margin-bottom: 24px !important;
+    margin-bottom: 30px !important;
   }
 }
