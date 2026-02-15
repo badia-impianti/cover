@@ -70,3 +70,10 @@ document.addEventListener("DOMContentLoaded", function () {
   newLink.click();
   window.URL.revokeObjectURL(url);
 }
+
+// Animazione hamburger
+document.querySelectorAll('.custom-toggler').forEach(btn => {
+  btn.addEventListener('click', () => {
+    btn.classList.toggle('active');
+  });
+});

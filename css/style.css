@@ -417,3 +417,39 @@ button:active {
     margin-bottom: 50px !important;
   }
 }
+
+/* ===== HAMBURGER MODERNO ===== */
+
+.custom-toggler{
+  border: none;
+  padding: 8px;
+  background: transparent;
+}
+
+/* Linee */
+.toggler-line{
+  display: block;
+  width: 26px;
+  height: 2px;
+  background-color: #000;
+  margin: 6px 0;
+  transition: all 0.35s ease;
+}
+
+/* Hover leggero */
+.custom-toggler:hover .toggler-line{
+  background-color: #555;
+}
+
+/* Animazione quando aperto */
+.custom-toggler.active .toggler-line:nth-child(1){
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.custom-toggler.active .toggler-line:nth-child(2){
+  opacity: 0;
+}
+
+.custom-toggler.active .toggler-line:nth-child(3){
+  transform: rotate(-45deg) translate(6px, -6px);
+}
