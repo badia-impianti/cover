@@ -400,12 +400,12 @@ button:active {
   .tagline{
     font-size: 1.05rem;
     line-height: 1.25;
-    margin: 10px auto 0;  /* ↓ avvicina al logo */
+    margin: 15px auto 0;  /* ↓ avvicina al logo */
   }
 
   /* Intro home (testo lungo) */
     .homepage-intro{
-    margin-top: 10px;     /* ↓ avvicina alla tagline */
+    margin-top: 20px;     /* ↓ avvicina alla tagline */
     font-size: 1.15rem;
     line-height: 1.45;
   }
