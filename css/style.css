@@ -121,12 +121,12 @@ p {
 }
 
 .homepage-intro{
-  font-family: 'Lora', serif;  /* 👈 nuovo font */
+  font-family: 'Inter', Arial, Helvetica, sans-serif; /* 👈 stesso stile logo */
   font-size: 1.6rem;
   font-weight: 400;
   max-width: 900px;
   margin: 0 auto;
-  line-height: 1.45;
+  line-height: 1.5;
 }
 
 .reveal {
@@ -403,11 +403,12 @@ button:active {
     margin: 20px auto 0;  /* ↓ avvicina al logo */
   }
 
-  /* Intro home (testo lungo) */
-    .homepage-intro{
-    margin-top: 30px;     /* ↓ avvicina alla tagline */
+  .homepage-intro{
+    font-family: 'Inter', Arial, sans-serif;
+    font-weight: 400;
     font-size: 1.15rem;
-    line-height: 1.45;
+    margin-top: 35px;
+    line-height: 1.5;
   }
 
   /* Sottotitoli pagine */
