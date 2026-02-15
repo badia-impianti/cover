@@ -484,3 +484,19 @@ button:active {
     font-size: 0.98rem;
   }
 }
+
+/* SPAZIO INTRO HOMEPAGE */
+.homepage-block{
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+
+/* MOBILE */
+@media (max-width: 768px){
+
+  .homepage-block{
+    margin-top: 30px;   /* ↑ spazio dalla tagline */
+    margin-bottom: 30px;
+  }
+
+}
